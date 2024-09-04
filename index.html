@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Image Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="page-header">
+        <img src="assets/logo/wsa-logo.svg" alt="wsa-logo">
+        <h1 class="project-title">Image Carousel</h1>
+    </div>
+    <section class="carousel-wrapper">
+            <!------------ Carousel slides with next and previous button ---------->
+            <div class="carousel-slides-container">
+                <button class="prev-button"><img src="assets/icons/arrow-prev.svg" alt="prev-icon" onclick="changeSlide(-1)"></button>
+                <img src="assets/images/slide1.png" alt="image-1" class="carousel-slide"  onclick="openPopup()">
+                <img src="assets/images/slide2.png" alt="image-2" class="carousel-slide"  onclick="openPopup()">
+                <img src="assets/images/slide3.png" alt="image-3" class="carousel-slide"  onclick="openPopup()">
+                <button class="next-button"><img src="assets/icons/arrow-next.svg" alt="next-icon" onclick="changeSlide(1)"></button>
+            </div>
+            <!------------ Dot indicators to jump between images ---------->
+            <div class="carousel-dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+    </section>
+    <footer class="copy-rights">
+        &copy; 2024 WSA. All Rights Reserved
+    </footer>
+
+    <!-- Level 2: popup view starts for level 2 -->
+
+    <div id="imagePopup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <div class="popup-content"><img alt="enlarged-image" id="popup-image"></div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
