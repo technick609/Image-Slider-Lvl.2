@@ -57,7 +57,7 @@ function currentSlide(n){
 //Add this below two lines for showing popup
 function openPopup(){
     const openIt = document.getElementById('imagePopup');
-    openIt.style.display = "block";
+    openIt.style.display = "flex";
 }
 
 function closePopup(){
