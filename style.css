@@ -192,3 +192,51 @@ body{
 }
 
 
+
+@media only screen and (max-width: 480px){   
+    body{
+        margin: auto;
+        padding: 10px;
+    }
+
+    .page-header{
+        display: flex;
+        flex-direction: column;
+    }
+    .project-title{
+        margin-top: 15px;
+        font-size: 23px;
+    }
+
+    .prev-button{
+        left: 10px;
+    }
+    .next-button{
+        right: 10px;
+    }
+
+    .carousel-slide{
+        height: calc(100vh - 500px);
+        object-fit: cover;
+    }
+
+    .popup{
+        top: 5px;
+    }
+    .popup-content{
+        height: 100vh;
+        width: 100%;
+        margin: 5% 3% 5% 3%
+    }
+
+    .close{
+        font-size: 30px;
+    }
+
+    .carousel-dots{
+        margin: 5px;
+        
+    }
+}
+
+
